@@ -1,0 +1,9 @@
+.heading-primary {
+  font-family: $font-primary;
+  font-size: 6.5rem;
+}
+
+.heading-secondary {
+  font-family: $font-secondary;
+  font-size: 3.5rem;
+}

@@ -9,24 +9,24 @@ const postCSSPlugins = [
 ]
 
 module.exports = {
-  mode: 'development',
   entry: path.resolve(__dirname, 'app/assets/scripts/App.js'),
   output: {
-    path: path.resolve(__dirname, 'app'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'app')
   },
   devServer: {
     watchFiles: ('./app/**/*.html'),
-    static: { directory: path.join(__dirname, 'app') },
-    hot: 'only',
-    liveReload: false,
+    static: { directory: path.join(__dirname, 'app'), watch: false, },
+    hot: true,
+    // liveReload: false,
     port: 3000,
     host: '0.0.0.0'
   },
+  mode: 'development',
   module: {
     rules: [{
       test: /\.css$/i,
-      use: ['style-loader', 'css-loader', { loader: 'postcss-loader', options: { postcssOptions: { plugins: postCSSPlugins } } }]
+      use: ['style-loader', {loader: 'css-loader', options: {url: false}}, { loader: 'postcss-loader', options: { postcssOptions: { plugins: postCSSPlugins } } }]
     }]
   }
 }

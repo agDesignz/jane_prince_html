@@ -1,6 +1,11 @@
-.container {
+@import 'base/_variables';
 
-  p {
-    color: green;
-  }
-}
+@import 'normalize.css';
+
+@import 'base/_global';
+@import 'base/_typography';
+
+@import 'modules/_background';
+@import 'modules/_container';
+@import 'modules/_full-screen';
+@import 'modules/_name';
