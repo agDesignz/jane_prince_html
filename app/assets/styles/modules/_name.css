@@ -1,20 +1,44 @@
 .name {
   display: flex;
+  flex-direction: column-reverse;
+  height: 100vh;
   align-items: stretch;
+
+  @mixin bp-sm {
+    flex-direction: row;
+    height: auto;
+  }
 
   &__content {
     flex: 1;
-    padding: 8rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 5%;
+    justify-content: space-evenly;
+    /* gap: 5%; */
+    align-items: center;
     text-align: center;
     color: $color-grey-light;
+    padding: 2.5rem;
+
+    @mixin bp-sm {
+      width: 50%;
+      /* justify-content:center;
+      gap: 5%; */
+    }
   }
 
   &__img {
-    max-width: 50%;
-    height: 100%;;
+    @mixin bp-sm {
+      width: 50%;
+    }
+  }
+
+  &__divider {
+
+    @mixin bp-sm {
+      width: 40%;
+      border-bottom: 1px solid $color-grey-light;
+    }
+
   }
 }
