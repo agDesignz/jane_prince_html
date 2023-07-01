@@ -4,7 +4,7 @@
   }
 }
 @define-mixin bp-md {
-  @media (min-width: 56.25em) {
+  @media (min-width: 50em) {
     @mixin-content;
   }
 }

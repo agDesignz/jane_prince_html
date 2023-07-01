@@ -22,9 +22,10 @@
 
     @mixin bp-sm {
       width: 50%;
-      /* justify-content:center;
-      gap: 5%; */
+      justify-content:center;
+      gap: 5%;
     }
+
   }
 
   &__img {
