@@ -1,11 +1,15 @@
 @import 'base/_variables';
+@import 'base/_mixins';
 
 /* @import 'normalize.css'; */
 
 @import 'base/_global';
-@import 'base/_mixins';
 @import 'base/_typography';
 
 @import 'modules/_background';
-@import 'modules/_container';
+@import 'modules/_flex';
+@import 'modules/_home-bio';
+@import 'modules/_home-hero';
 @import 'modules/_name';
+@import 'modules/_page-section';
+@import 'modules/_wrapper';

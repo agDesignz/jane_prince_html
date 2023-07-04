@@ -10,8 +10,13 @@ html {
   box-sizing: border-box;
   font-size: 50%;
 
-  /* @mixin bp- */
-  /* font-size: 62.5%; */
+  @mixin bp-md {
+    font-size: 56.25%;
+  }
+
+  @mixin bp-lg {
+    font-size: 62.5%;
+  }
 }
 
 /* body {} */

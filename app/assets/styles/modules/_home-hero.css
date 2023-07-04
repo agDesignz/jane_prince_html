@@ -1,0 +1,23 @@
+.home-hero {
+  min-height: 75vh;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* bottom: 0; */
+    height: 75vh;
+    left: 0;
+    background:
+      $color-primary url(/assets/images/jane-hero-home--lg.jpg) top center no-repeat;
+    background-size: cover;
+    opacity: 0.2
+  }
+
+  &__title {
+    text-align: center;
+    margin-top: 30vh;
+  }
+}

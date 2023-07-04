@@ -1,0 +1,29 @@
+.home-bio {
+  gap: 8rem;
+  justify-content: space-evenly;
+
+  &__img-box {
+
+    @mixin bp-sm {
+      height: auto;
+      flex: 1;
+    }
+  }
+
+  &__img {
+    max-width: 30rem;
+    border-radius: 75%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    @mixin bp-sm {
+      max-width: 27.5rem;
+    }
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__text {
+  }
+}
