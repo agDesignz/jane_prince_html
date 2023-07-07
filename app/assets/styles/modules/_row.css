@@ -25,12 +25,20 @@
     flex: 1;
   }
 
+  &--gap-sm {
+    gap: $gap-sm;
+  }
+
   &--gap-md {
     gap: $gap-md;
   }
 
   &--gap-lg {
     gap: $gap-lg;
+  }
+
+  &--col {
+    flex-direction: column;
   }
 
 }
