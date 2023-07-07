@@ -1,0 +1,31 @@
+.grid {
+  display: grid;
+  gap: $gap-sm;
+
+  &--md-12 {
+
+    @mixin bp-md {
+      grid-template-columns: repeat(12, 1fr);
+      gap: $gap-md;
+    }
+
+  }
+
+  &__item {
+    grid-column: 1 / -1;
+
+      
+  &--md-6 {
+    @mixin bp-md {
+      grid-column: span 6;
+    }
+  }
+
+  &--lg-4 {
+    @mixin bp-lg {
+      grid-column: span 4;
+    }
+  }
+  }
+
+}

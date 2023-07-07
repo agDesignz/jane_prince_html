@@ -25,3 +25,12 @@ img {
   width: 100%;
   display: block;
 }
+
+a {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: inline-block;
+  }
+}

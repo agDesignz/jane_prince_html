@@ -1,0 +1,17 @@
+.card {
+
+  &--p-medium {
+    padding: 2.5rem;
+    box-shadow: $shadow-light;
+  }
+
+  &--md {
+    @mixin bp-md {
+      border-radius: .8rem;
+    }
+  }
+
+  &--white {
+    background-color: $color-white;
+  }
+}

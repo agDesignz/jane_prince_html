@@ -1,5 +1,5 @@
 .home-bio {
-  gap: 8rem;
+  /* gap: 8rem; */
   justify-content: space-evenly;
 
   &__img-box {
@@ -13,7 +13,7 @@
   &__img {
     max-width: 30rem;
     border-radius: 75%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: $shadow-dark;
 
     @mixin bp-sm {
       max-width: 27.5rem;

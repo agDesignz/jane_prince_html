@@ -10,3 +10,16 @@ $color-white: #ffffff;
 /* FONTS */
 $font-primary: 'Lato', sans-serif;
 $font-secondary: 'Montserrat', sans-serif;
+$default-font-size: 1.8rem;
+
+/* BOX - SHADOW */
+$shadow-dark: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+$shadow-medium: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+/* SPACING */
+$gap-lg: 8rem;
+$gap-md: 5rem;
+$gap-sm: 2.5rem;
+
+$p-sm: 2.5rem;

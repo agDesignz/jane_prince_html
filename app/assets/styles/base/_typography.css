@@ -21,9 +21,20 @@ body {
   @mixin bp-md {
     font-size: 3.5rem;
   }
+
+  /* &--larger {
+
+    @mixin bp-sm {
+      font-size: 3rem;
+    }
+
+    @mixin bp-md {
+      font-size: 4rem;
+    }
+  } */
 }
 
 p {
   font-family: $font-primary;
-  font-size: 1.8rem;
+  font-size: $default-font-size;
 }

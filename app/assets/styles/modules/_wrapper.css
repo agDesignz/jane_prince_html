@@ -1,16 +1,26 @@
 .wrapper {
-  max-width: 120rem;
+  max-width: 114rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-
-  @mixin bp-sm {
-    padding-left: 0;
-    padding-right: 0;
-  }
+  padding-left: $p-sm;
+  padding-right: $p-sm;
 
   &--full-height {
     height: 100%;
+  }
+
+  &--p-sm {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin bp-sm {
+      padding-left: $p-sm;
+      padding-right: $p-sm;
+    }
+  }
+
+  @mixin bp-lg {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

@@ -1,23 +1,41 @@
 .home-hero {
-  min-height: 75vh;
+  height: 40rem;
   position: relative;
+
+  @mixin bp-md {
+    height: 50rem;
+  }
+
+  @mixin bp-lg {
+    height: 60rem;
+  }
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
-    /* bottom: 0; */
-    height: 75vh;
+    bottom: 0;
     left: 0;
     background:
       $color-primary url(/assets/images/jane-hero-home--lg.jpg) top center no-repeat;
     background-size: cover;
-    opacity: 0.2
+    opacity: 0.2;
   }
 
   &__title {
     text-align: center;
-    margin-top: 30vh;
+    font-family: $font-primary;
+    font-size: 2.8rem;
+    line-height: 1.25;
+    z-index: 10;
+
+    @mixin bp-sm {
+      font-size: 3.2rem;
+    }
+
+    @mixin bp-md {
+      font-size: 4.5rem;
+    }
   }
 }
