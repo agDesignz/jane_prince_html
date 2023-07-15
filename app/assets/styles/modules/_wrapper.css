@@ -9,6 +9,10 @@
     height: 100%;
   }
 
+  &--narrow {
+    max-width: 94rem;
+  }
+
   &--p-sm {
     padding-left: 0;
     padding-right: 0;

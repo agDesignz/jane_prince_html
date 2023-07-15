@@ -1,5 +1,8 @@
 .footer {
   min-height: 10rem;
+  /* position: absolute;
+  width: 100%;
+  bottom: 0; */
   color: $color-grey-light;
   padding-top: 2rem;
   padding-bottom: 5rem;

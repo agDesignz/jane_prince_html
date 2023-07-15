@@ -12,10 +12,13 @@
 @import 'modules/_card';
 @import 'modules/_footer';
 @import 'modules/_grid';
+@import 'modules/_header-home';
+@import 'modules/_header-posts';
 @import 'modules/_home-bio';
 @import 'modules/_home-hero';
 @import 'modules/_home-posts';
-@import 'modules/_name';
+@import 'modules/_navigation';
 @import 'modules/_page-section';
+@import 'modules/_post-single';
 @import 'modules/_row';
 @import 'modules/_wrapper';

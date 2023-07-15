@@ -34,3 +34,12 @@ a {
     display: inline-block;
   }
 }
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+body.stop-scroll {
+  overflow-y: hidden;
+}

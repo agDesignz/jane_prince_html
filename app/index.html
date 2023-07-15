@@ -16,27 +16,47 @@
 </head>
 
 <body>
-  <section class="name">
-    <div class="name__content background--blue">
-      <h1 class="name__title heading-primary">Jane Prince</h1>
-      <div class="name__divider"></div>
-      <h2 class="name__subtitle heading-secondary">Representing Ward 7 <br> in Saint Paul's East Side</h2>
+
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background">
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+          <li class="navigation__item"><a href="posts.html" class="navigation__link">Issues</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+  </div>
+
+  <header class="header-home">
+    <div class="header-home__content background--blue">
+      <h1 class="header-home__title heading-primary">Jane Prince</h1>
+      <div class="header-home__divider"></div>
+      <h2 class="header-home__subtitle heading-secondary">Representing Ward 7 <br> in Saint Paul's East Side</h2>
     </div>
 
-    <div class="name__img">
+    <div class="header-home__img">
       <picture>
         <source srcset="assets/images/jane-portrait--lg.jpg" media="(min-width: 600px)">
         <img src="assets/images/jane-portrait--lg--cropped.jpg" alt="Portrait of Jane Prince">
       </picture>
 
     </div>
-  </section>
+  </header>
 
   <section class="page-section background--grey">
     <div class="wrapper">
       <div class="home-bio row row--gap-lg">
 
-        <div class="home-bio__img-box row row--center">
+        <div class="home-bio__img-box row row--ce Second Harvest Hearthand nter">
           <img class="home-bio__img" src="assets/images/jane-yoergs--md.jpg"
             alt="Jane with her book group at Yoerg's Brewery in the East side.">
         </div>
