@@ -23,6 +23,16 @@
     }
   }
 
+  &--p-md {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin bp-md {
+      padding-left: $p-sm;
+      padding-right: $p-sm;
+    }
+  } 
+
   @mixin bp-lg {
     padding-left: 0;
     padding-right: 0;

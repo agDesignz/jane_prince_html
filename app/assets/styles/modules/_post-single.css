@@ -1,28 +1,87 @@
 .post-single {
+  display: grid;
+  gap: 4rem;
   align-items: center;
+  text-align: center;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @mixin bp-md {
+    grid-template-columns: 1fr 2fr;
+    text-align: left;
+    max-width: 100%;
+  }
 
   &__image {
-    flex: 1;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: auto;
+    object-fit: cover;
+
+    @mixin bp-xs {
+      width: 100%;
+    }
   }
 
   &__text {
-    flex: 2;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    background: linear-gradient(45deg, rgba($color-grey-dark, .75),rgba($color-grey-dark, .75));
+    height: 100%;
+    justify-content: center;
+    padding: 2.5rem;
+
+
+    &:hover {
+      background: linear-gradient(45deg, rgba($color-grey-dark, .85),rgba($color-grey-dark, .85));
+    }
+
+    @mixin bp-sm {
+      padding: 4rem;
+    }
+
+    @mixin bp-md {
+      grid-column: 2 / span 1;
+      height: auto;
+      background: none;
+      padding: 0;
+
+
+    &:hover {
+      background: none;
+    }
+    }
+
+
   }
 
   &__title {
     font-size: 3rem;
     font-weight: 500;
     line-height: 1;
-    color: $color-primary;
+    color: $color-white;
     text-transform: uppercase;
+
+    @mixin bp-md {
+      color: $color-primary;
+    }
   }
 
   &__content {
-    color: $color-grey-medium;
+    color: $color-white;
     font-weight: 300;
     font-size: 1.6rem;
+
+    @mixin bp-md {
+      color: $color-grey-medium;
+    }
   }
 }

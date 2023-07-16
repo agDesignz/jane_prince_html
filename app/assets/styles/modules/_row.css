@@ -5,6 +5,14 @@
   @mixin bp-sm {
     flex-direction: row;
   }
+/* 
+  &--col-md {
+    flex-direction: column;
+
+    @mixin bp-md {
+      flex-direction: row;
+    }
+  } */
 
   &--reverse {
     flex-direction: column-reverse;
