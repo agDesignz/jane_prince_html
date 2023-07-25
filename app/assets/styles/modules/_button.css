@@ -3,24 +3,26 @@
   &,
   &:link,
   &:visited {
+    text-decoration: none;
     text-transform: uppercase;
-    /* text-decoration: none;
-    display: inline-block; */
-    font-family: $font-secondary;
-    font-size: $default-font-size;
+    @mixin default-font-size;
     padding: 1rem 2rem;
-    border-radius: .5rem;
-    position: relative;
-    transition: all .2s;
+    display: inline-block;
+    /* position: relative; */
+    transition: all .2s ease-out;
   }
 
   &--green {
+    border: 1px solid $color-secondary;
     background-color: $color-secondary;
     color: $color-white;
+    box-shadow: $shadow-medium;
   }
 
-  &:hover {
-    transform: translateY(-3px);
+  &:hover,
+  &:active {
+    transform: scale(1.02);
+    /* transform: translateY(-1px) scale(1.02); */
     box-shadow: $shadow-light;
     opacity: 0.85;
   }

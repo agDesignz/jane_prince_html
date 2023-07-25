@@ -2,8 +2,8 @@
   max-width: 114rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: $p-sm;
-  padding-right: $p-sm;
+  height: 100%;
+  padding: 0 2rem;
 
   &--full-height {
     height: 100%;
@@ -33,7 +33,7 @@
     }
   } 
 
-  @mixin bp-lg {
+  @mixin bp-md {
     padding-left: 0;
     padding-right: 0;
   }

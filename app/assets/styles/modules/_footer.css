@@ -1,29 +1,24 @@
 .footer {
   min-height: 10rem;
-  /* position: absolute;
-  width: 100%;
-  bottom: 0; */
   color: $color-grey-light;
   padding-top: 2rem;
   padding-bottom: 5rem;
-  background-color: $color-primary;
+  background: $bg-primary-dark;
 
   &__container {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__box {
     display: flex;
-    gap: 1.2rem;
-    align-items: stretch;
     justify-content: center;
 
-    &--prep {
-      flex: 1;
-      align-items: center;
-      justify-content: center;
-
-      @mixin bp-sm {
-        justify-content: flex-end;
-      }
-      
-
+    &--social {
+      gap: .5rem;
+      padding-bottom: 5rem;
     }
   }
 
@@ -34,8 +29,7 @@
     &:focus {
       
       div {
-        background-color: $color-white;
-        
+        background-color: $color-grey-light;
       }
 
       h4 {
@@ -58,7 +52,6 @@
     gap: .7rem;
     border-radius: .3rem;
     transition: all .3s;
-    /* position: relative; */
   }
 
   &__label {
@@ -76,8 +69,13 @@
     transition: all .3s;
   }
 
-  &__copywrite {
+  &__prep-text {
+    font-size: 1.7rem;
+  }
+
+  &__copy-text {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    color: $color-grey-light;
   }
 }

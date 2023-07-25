@@ -40,5 +40,6 @@ body {
 
 p {
   font-family: $font-primary;
-  font-size: $default-font-size;
+  @mixin default-font-size;
+  font-weight: 300;
 }

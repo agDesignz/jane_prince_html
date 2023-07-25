@@ -17,11 +17,12 @@
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     overflow: hidden;
+    height: 100%;
   }
 
   &__img {
-    width: auto;
     object-fit: cover;
+    height: 100%;
 
     @mixin bp-xs {
       width: 100%;
