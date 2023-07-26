@@ -9,4 +9,8 @@
     background-color: $color-grey-light;
     color: $color-primary-dark;
   }
+
+  &--white {
+    color: $color-primary-dark;
+  }
 }

@@ -17,7 +17,7 @@ body {
 .heading-secondary {
   font-family: $font-secondary;
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 400;
 
   @mixin bp-md {
     font-size: 3.5rem;
@@ -42,4 +42,8 @@ p {
   font-family: $font-primary;
   @mixin default-font-size;
   font-weight: 300;
+
+  /* @mixin bp-md {
+    font-weight: 300;
+  } */
 }

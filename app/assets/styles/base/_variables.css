@@ -1,10 +1,18 @@
 /* COLORS */
 $color-primary: #3e4a82;
 $color-primary-light: #626D9E;
+$color-primary-lightest: #9199BE;
 $color-primary-dark: #232f67;
 $color-primary-darkest: #0d1848;
+
 $color-secondary: #6cac44;
-$color-grey-light: #dee1ec;
+$color-secondary-light: #98D073;
+$color-secondary-lightest: #c0e8a6;
+$color-secondary-dark: #438d25;
+$color-secondary-darkest: #2e6609;
+
+
+$color-grey-light: #d4d8eb;
 $color-black: #000000;
 $color-white: #ffffff;
 $color-grey-dark: #242424;
