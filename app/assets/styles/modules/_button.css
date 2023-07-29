@@ -5,7 +5,8 @@
   &:visited {
     text-decoration: none;
     text-transform: uppercase;
-    @mixin default-font-size;
+    font-size: 2rem;
+    color: auto;
     padding: .5rem 1.5rem;
     display: inline-block;
     font-weight: 500;
@@ -22,6 +23,20 @@
     &:active {
       transform: scale(1.02);
       /* transform: translateY(-1px) scale(1.02); */
+      box-shadow: $shadow-light;
+      opacity: 0.85;
+    }
+  }
+
+  &--white {
+    border: 1px solid $color-white;
+    color: $color-white;
+    box-shadow: $shadow-medium;
+
+    &:hover,
+    &:active {
+      transform: scale(1.02);
+      background-color: rgba($color-grey-light, .2);
       box-shadow: $shadow-light;
       opacity: 0.85;
     }

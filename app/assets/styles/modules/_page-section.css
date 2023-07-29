@@ -1,7 +1,12 @@
 .page-section {
-  padding: 10rem 0;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 
   @mixin bp-md {
     padding: 15rem 0;
   }
+
+  &--no-padding {
+    padding-top: 0;
+    padding-bottom: 0;  }
 }

@@ -20,13 +20,14 @@ $color-grey-medium: #4e4a4a;
 
 $bg-primary: linear-gradient(45deg, $color-primary-dark, $color-primary);
 $bg-primary-dark: linear-gradient(25deg, $color-primary-darkest, $color-primary-dark);
+$bg-secondary: linear-gradient(25deg, $color-secondary-dark, $color-secondary);
 
 /* SIZES */
 
 /* FONTS */
-$font-primary: 'Lato', sans-serif;
-$font-secondary: 'Montserrat', sans-serif;
-/* $default-font-size-sm: 1.8rem; */
+
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Lato', sans-serif;
 
 /* BOX - SHADOW */
 $shadow-dark: rgba(0, 0, 0, 0.35) 0px 5px 15px;

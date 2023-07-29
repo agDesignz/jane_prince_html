@@ -1,0 +1,15 @@
+.home-feed {
+
+  &__container {
+    display: grid;
+    gap: $gap-sm;
+
+    @mixin bp-sm {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @mixin bp-md {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}

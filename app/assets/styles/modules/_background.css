@@ -13,4 +13,9 @@
   &--white {
     color: $color-primary-dark;
   }
+
+  &--green {
+    background: $color-secondary-dark;
+    color: $color-white;
+  }
 }

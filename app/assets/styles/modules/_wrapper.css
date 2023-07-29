@@ -1,40 +1,11 @@
 .wrapper {
+  width: 95%;
   max-width: 114rem;
   margin-left: auto;
   margin-right: auto;
   height: 100%;
-  padding: 0 2rem;
 
-  &--full-height {
-    height: 100%;
-  }
-
-  &--narrow {
-    max-width: 94rem;
-  }
-
-  &--p-sm {
-    padding-left: 0;
-    padding-right: 0;
-
-    @mixin bp-sm {
-      padding-left: $p-sm;
-      padding-right: $p-sm;
-    }
-  }
-
-  &--p-md {
-    padding-left: 0;
-    padding-right: 0;
-
-    @mixin bp-md {
-      padding-left: $p-sm;
-      padding-right: $p-sm;
-    }
-  } 
-
-  @mixin bp-md {
-    padding-left: 0;
-    padding-right: 0;
+  &--narrow-full {
+    max-width: 75rem;
   }
 }

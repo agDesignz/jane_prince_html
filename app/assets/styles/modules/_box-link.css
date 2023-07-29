@@ -1,0 +1,55 @@
+.box-link {
+  border: 2px solid;
+  min-height: 40rem;
+  max-width: 55rem;
+  margin: 0 auto;
+  transition: all .24s ease-out;
+
+  &:hover {
+    border-color: $color-secondary-dark;
+    background-color: $color-secondary-dark;
+    color: $color-white;
+    box-shadow: $shadow-medium;
+    transform: scale(1.015)
+  }
+  
+
+  &__anchor {
+
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: inherit;
+      padding: $gap-sm;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__inner {
+    display: grid;
+    justify-items: start;
+    row-gap: 2.5rem;
+    grid-template-rows: auto auto 1fr;
+    align-content: center;
+    height: 100%;
+
+    @mixin bp-md {
+      align-content: start;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+  }
+
+  &__text {}
+
+  &__tag {
+    font-size: 1.4rem;
+    align-self: end;
+  }
+
+
+}

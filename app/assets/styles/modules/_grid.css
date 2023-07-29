@@ -1,10 +1,13 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: $gap-sm;
 
-  @mixin bp-md {
-    gap: $gap-md;
+  &--gap-v {
+    column-gap: $gap-sm;
+  }
+
+  &--gap-h {
+    row-gap: $gap-sm;
   }
 
   &--full-height {
@@ -12,7 +15,7 @@
   }
 
   &__item {
-      grid-column: 1 / -1;
+    grid-column: 1 / -1;
 
     &--ctr {
       justify-self: center;
@@ -30,6 +33,12 @@
     &--md-6 {
       @mixin bp-md {
         grid-column: span 6;
+      }
+    }
+
+    &--md-4 {
+      @mixin bp-md {
+        grid-column: span 4;
       }
     }
 

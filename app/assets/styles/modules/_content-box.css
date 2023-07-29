@@ -1,13 +1,42 @@
 .content-box {
   display: grid;
-  gap: 2.5rem;
+  gap: $gap-sm;
   justify-items: center;
-  max-width: 75rem;
   margin: auto;
-  text-align: justify;
-  padding: 0 2.5rem;
+  /* padding: 0 2.5rem; */
+  max-width: 95%;
+
+  &--md-left {
+    @mixin bp-md {
+      justify-items: start;
+    }
+  }
 
   @mixin bp-md {
     padding: 0;
+  }
+
+  &--narrow {
+    width: 95%;
+    max-width: 75rem;
+
+    &--half {
+      @mixin bp-md {
+        width: 90%;
+        max-width: 40rem;
+      }
+    }
+  }
+
+
+
+  &--p-vert {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    @mixin bp-md {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+    }
   }
 }
