@@ -2,22 +2,41 @@
 
   &__display {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 15vw);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vw 50vw;
+
+    @mixin bp-sm {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 32vw 32vw;
+    }
+    
+    @mixin bp-md {
+      grid-template-rows: repeat(3, 16vw);
+    }
+    
   }
 
   &__item {
 
-    &--1 {
-      grid-column: 1 / -1;
-      grid-row: -2 / -1;
+    @mixin bp-sm {
+      &--1 {
+        grid-column: 1 / -1;
+        grid-row: -2 / -1;
+      }
     }
-    &--2 {
-      grid-column: 2 / -1;
-      grid-row: 1 / -2;
+
+    @mixin bp-md {
+      &--1 {
+        
+        grid-row: -2 / -1;
+      }
+      &--2 {
+        grid-column: 2 / -1;
+        grid-row: 1 / -2;
+      }
     }
-    &--3 {}
-    &--4 {}
+
+
   }
 
   &__image {

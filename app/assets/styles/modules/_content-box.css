@@ -4,7 +4,7 @@
   justify-items: center;
   margin: auto;
   /* padding: 0 2.5rem; */
-  max-width: 95%;
+  max-width: $full-width;
 
   &--md-left {
     @mixin bp-md {
@@ -17,7 +17,7 @@
   }
 
   &--narrow {
-    width: 95%;
+    width: $full-width;
     max-width: 75rem;
 
     &--half {
@@ -28,9 +28,12 @@
     }
   }
 
+  &--pv-sm {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 
-
-  &--p-vert {
+  &--pv {
     padding-top: 5rem;
     padding-bottom: 5rem;
 
