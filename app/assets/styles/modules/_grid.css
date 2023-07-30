@@ -30,6 +30,12 @@
       justify-self: center;
     }
 
+    &--sm-6 {
+      @mixin bp-sm {
+        grid-column: span 6;
+      }
+    }
+
     &--md-6 {
       @mixin bp-md {
         grid-column: span 6;

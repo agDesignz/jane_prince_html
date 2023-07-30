@@ -1,8 +1,90 @@
+
 .header-home {
+  /* height: 100vh; */
+  overflow: hidden;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+
+  @mixin bp-sm {
+    height: auto;
+    /* max-height: 100vh; */
+    
+  }
+
+  &__container {
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+
+    @mixin bp-sm {
+      flex-direction: row;
+    }
+  }
+
+
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: $color-white;
+    padding: 2.5rem;
+
+    @mixin bp-sm {
+      width: 50%;
+      padding: 0;
+    }
+  }
+
+  &__subtitle {
+    font-family: $font-secondary;
+    line-height: 1;
+    font-size: 4.5rem;
+
+    @mixin bp-md {
+      font-size: 5.5rem;
+    }
+  }
+
+  &__fig {
+    
+    @mixin bp-sm {
+      width: 50%;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    object-fit: cover;
+
+    @mixin bp-sm {
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header-home {
+  display: grid;
+  grid-template-rows: min-content min-content minmax(min-content, 1fr);
   height: 100vh;
-  align-items: stretch;
   overflow: hidden;
 
   @mixin bp-sm {
@@ -11,24 +93,10 @@
     max-height: 100vh;
   }
 
-  &__content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    align-items: center;
-    text-align: center;
-    color: $color-white;
-    padding: 2.5rem;
 
-    @mixin bp-sm {
-      width: 50%;
-      justify-content:center;
-      gap: 5%;
-    }
 
-  }
+
+
 
   &__img {
     @mixin bp-sm {

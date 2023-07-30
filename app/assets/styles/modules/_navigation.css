@@ -1,23 +1,32 @@
 .navigation {
   width: 100%;
-  height: 5.6rem;
+  /* height: 5.6rem; */
 
   &__container {
     background: $bg-primary;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 1.2rem 4%;
     /* position: fixed; */
   }
 
   &__title-box {
-    padding: 1rem 4%;
+    /* padding: 1rem 4%; */
   }
 
   &__title {
     color: $color-white;
     font-size: 2.4rem;
     font-weight: 300;
+
+    @mixin bp-sm {
+      font-size: 2.6rem;
+    }
+
+    @mixin bp-md {
+      font-size: 3rem;
+    }
   }
 
 
@@ -32,7 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 5.6rem;
+    width: 3rem;
     cursor: pointer;
     transition: all 0.3s;
 
@@ -139,7 +148,7 @@
     &::before,
     &::after {
       width: 3rem;
-      height: 3px;
+      height: 2px;
       border-radius: 2px;
       background-color: $color-grey-light;
       transition: transform 0.3s;
