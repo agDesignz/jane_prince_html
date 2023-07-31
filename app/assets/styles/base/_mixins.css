@@ -24,6 +24,12 @@
   }
 }
 
+@define-mixin bp-nav {
+  @media (min-width: 75em) {  /* 1200px */
+    @mixin-content;
+  }
+}
+
 
 /* FONTS */
 @define-mixin default-font-size {

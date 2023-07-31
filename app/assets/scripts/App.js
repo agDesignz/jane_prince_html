@@ -1,7 +1,9 @@
 import '../styles/styles.css';
 import NavStopScroll from './modules/NavStopScroll.js';
+import StickyHeader from './modules/StickyHeader';
 
 let navStopScroll = new NavStopScroll();
+new StickyHeader();
 
 
 // let checkBox = document.querySelector('.navigation__checkbox');

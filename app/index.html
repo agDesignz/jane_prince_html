@@ -28,7 +28,9 @@
 
         <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
         <label for="nav-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
+          <!-- <div class="navigation__button--background"> -->
+            <span class="navigation__icon">&nbsp;</span>
+          <!-- </div> -->
         </label>
 
         <div class="navigation__background">
@@ -36,7 +38,8 @@
             <ul class="navigation__list">
               <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
               <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-              <li class="navigation__item"><a href="posts.html" class="navigation__link">Issues</a></li>
+              <li class="navigation__item"><a href="posts.html" class="navigation__link">Accomplishments</a></li>
+              <li class="navigation__item"><a href="posts.html" class="navigation__link">Vision</a></li>
               <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
             </ul>
           </nav>
@@ -46,17 +49,20 @@
 
     <div class="header-home__container">
 
-    <div class="header-home__content background--blue">
-      <h2 class="header-home__subtitle heading-secondary">Working for<br>Saint
-        Paul<br>and th<span class="text-green">e</span><br>East Side</h2>
-    </div>
-    
-      <figure class="header-home__fig">
-        <picture>
-          <source srcset="assets/images/jane-portrait--lg.jpg" media="(min-width: 600px)">
-          <img class="header-home__img" src="assets/images/jane-portrait--lg--cropped.jpg" alt="Portrait of Jane Prince">
-        </picture>
-      </figure>
+      <div class="header-home__content">
+        <h2 class="header-home__subtitle">Working for<br>Saint
+          Paul<br>and th<span class="text-green">e</span><br>East Side</h2>
+      </div>
+
+      <div class="header-home__portrait">
+        <figure class="header-home__fig">
+          <picture>
+            <!-- <source srcset="assets/images/jane-portrait--lg.jpg" media="(min-width: 600px)"> -->
+            <img class="header-home__img" src="assets/images/jane-portrait--lg--cropped.jpg"
+              alt="Portrait of Jane Prince">
+          </picture>
+        </figure>
+      </div>
 
     </div>
   </header>
@@ -85,7 +91,7 @@
       </div>
       <div
         class="home-about__content grid__item grid__item--md-6 content-box content-box--pv content-box--md-left content-box--narrow content-box--narrow--half">
-        <h2 class="heading-secondary">Representing Ward 7 <br> in Saint
+        <h2 class="heading-secondary">Representing Ward 7,<br>Saint
           Paul's East Side</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quas tenetur qui voluptatem voluptatum
           commodi ad est. Unde quo reprehenderit modi repudiandae provident labore delectus consequatur quia omnis
@@ -110,14 +116,14 @@
           <img src="./assets/images/jane-hero-home--sm.jpg" alt="Jane with contractors" class="home-vision__image">
         </figure>
         <figure class="home-vision__item home-vision__item--2">
-          <img src="./assets/images/jane-hands.jpg" alt="Jane's hand and her grand-daughter's hand"
+          <img src="./assets/images/jane-boxing.jpg" alt="Jane's hand and her grand-daughter's hand"
             class="home-vision__image">
         </figure>
         <figure class="home-vision__item home-vision__item--3">
-          <img src="./assets/images/jane-speech-2.jpg" alt="Jane giving a speech" class="home-vision__image">
+          <img src="./assets/images/jane-hands.jpg" alt="Jane giving a speech" class="home-vision__image">
         </figure>
         <figure class="home-vision__item home-vision__item--4">
-          <img src="./assets/images/jane-boxing.jpg" alt="Jane at boxing training" class="home-vision__image">
+          <img src="./assets/images/jane-speech-2.jpg" alt="Jane at boxing training" class="home-vision__image">
         </figure>
       </div>
     </div>
