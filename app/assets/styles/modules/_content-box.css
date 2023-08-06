@@ -5,20 +5,14 @@
   margin: auto;
   justify-items: start;
 
-  @mixin bp-md {
-    padding: 0;
-  }
-
   &--full {
     width: 100%;
   }
 
   &--narrow {
-    /* width: $full-width; */
     max-width: 75rem;
 
     &--half {
-      /* width: $full-width; */
 
       @mixin bp-md {
         
@@ -26,19 +20,4 @@
       }
     }
   }
-
-  /* &--pv-sm {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  &--pv {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-
-    @mixin bp-md {
-      padding-top: 10rem;
-      padding-bottom: 10rem;
-    }
-  } */
 }

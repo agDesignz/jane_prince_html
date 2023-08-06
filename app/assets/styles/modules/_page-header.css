@@ -2,17 +2,17 @@
   display: grid;
   
 
-  @mixin bp-md {
+  @mixin bp-sm {
+    max-height: 40vw;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    /* min-height: 50vh; */
   }
   
   &__background {
     grid-column: 1 / -1;
     grid-row: 1 / -2;
 
-    @mixin bp-md {
+    @mixin bp-sm {
       background:  no-repeat top center;
       background-size: cover;
     }
@@ -24,48 +24,82 @@
     &--group {
       background-image: linear-gradient(rgba($color-primary-dark, .9), rgba($color-primary-dark, .85)), url(./assets/images/jane-group-4.jpg)
     }
+
+    &--blue {
+      background: $bg-primary;
+    }
+
+    &--grey {
+      background: $color-grey-light;
+    }
   }
 
   &__content {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
+    color: $color-primary-dark;
+    text-align: center;
+    width: 100%;
 
-    @mixin bp-md {
+    @mixin bp-sm {
       grid-row: 2 / -1;
       display: grid;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-columns: 1fr 2fr;
+      color: $color-white;
+      width: $full-width;
+      max-width: 114rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    & > .page-header__figure {
+      display: none;
+  
+      @mixin bp-sm {
+        display: block; 
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+        box-shadow: $shadow-medium;
+      }
+
+    }
+
+    &--grey {
+      background: $color-grey-light;
+      color: $color-primary-dark;
+      
+
+      @mixin bp-sm {
+        box-shadow: $shadow-medium;
+        text-align: right;
+      }
+    }
+
+    &--blue {
+      background: $bg-primary;
+
+      @mixin bp-sm {
+        box-shadow: $shadow-medium;
+      }
     }
   }
 
-  &__figure {
-    display: none;
 
-    @mixin bp-md {
-      display: block; 
-      grid-column: 1 / 2;
-      grid-row: 1 / -1;
-      box-shadow: $shadow-medium;
-    }
-
-  }
 
   &__text {
     background: $color-grey-light;
-    color: $color-primary-dark;
     grid-column: 1 / -1;
     grid-row: 1 / span 3;
     display: grid;
     gap: 1.5rem;
     padding: 5rem 2.5rem;
-    text-align: center;
 
-    @mixin bp-md {
+    @mixin bp-sm {
       background: none;
       grid-column: 2 / -1;
       grid-row: 1 / -2;
-      color: $color-white;
-      text-align: left;
       align-content: end;
       padding: 2.5rem 8rem;
     }
