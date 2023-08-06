@@ -1,0 +1,9 @@
+.accomplishments-buttons {
+  @mixin bp-sm {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @mixin bp-md {
+    grid-template-columns: 1fr;
+  }
+}

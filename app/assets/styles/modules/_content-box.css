@@ -1,34 +1,33 @@
 .content-box {
+  width: $full-width;
   display: grid;
   gap: $gap-sm;
-  justify-items: center;
   margin: auto;
-  /* padding: 0 2.5rem; */
-  max-width: $full-width;
-
-  &--md-left {
-    @mixin bp-md {
-      justify-items: start;
-    }
-  }
+  justify-items: start;
 
   @mixin bp-md {
     padding: 0;
   }
 
+  &--full {
+    width: 100%;
+  }
+
   &--narrow {
-    width: $full-width;
+    /* width: $full-width; */
     max-width: 75rem;
 
     &--half {
+      /* width: $full-width; */
+
       @mixin bp-md {
-        width: 90%;
+        
         max-width: 40rem;
       }
     }
   }
 
-  &--pv-sm {
+  /* &--pv-sm {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
@@ -41,5 +40,5 @@
       padding-top: 10rem;
       padding-bottom: 10rem;
     }
-  }
+  } */
 }

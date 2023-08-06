@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 
+  &--gap {
+    gap: $gap-sm;
+  }
+
   &--gap-v {
     column-gap: $gap-sm;
   }
@@ -39,6 +43,12 @@
     &--md-6 {
       @mixin bp-md {
         grid-column: span 6;
+      }
+    }
+
+    &--md-8 {
+      @mixin bp-md {
+        grid-column: span 8;
       }
     }
 

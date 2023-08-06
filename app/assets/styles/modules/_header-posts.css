@@ -1,19 +1,22 @@
 .header-posts {
 
   &__container {
+    display: flex;
+    align-items: flex-end;
     background-color: $color-primary;
-    min-height: 35vh;
-    padding: 3rem;
-    color: $color-grey-light;
+    background: linear-gradient(rgba($color-primary, .9), rgba($color-primary, .9)), url(./assets/images/jane-group-4.jpg);
+    background-position: top center;
+    background-size: cover;
+    min-height: 25vh;
+    padding: 3rem 0;
+    color: $color-white;
   
-    @mixin bp-sm {
-      background: linear-gradient(rgba($color-primary, .9), rgba($color-primary, .9)), url(./assets/images/jane-group-4.jpg);
-      background-position: top center;
-      background-size: contain no-repeat;
+    @mixin bp-md {
+      min-height: 35vh;
     }
   
     @mixin bp-md {
-      padding: 5rem;
+      padding: 5rem 0;
     }
   }
 

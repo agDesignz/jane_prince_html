@@ -1,11 +1,26 @@
 .wrapper {
   width: $full-width;
   max-width: 114rem;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100%;
+  margin: auto;
 
-  &--narrow-full {
+  /* &--narrow {
     max-width: 75rem;
+
+    &--half {
+      @mixin bp-md {
+        max-width: 40rem;
+      }
+    }
+  } */
+
+  &--medium {
+    width: 100%;
+
+    @mixin bp-md {
+      width: $full-width;
+      max-width: 114rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }

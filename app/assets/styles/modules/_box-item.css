@@ -1,0 +1,27 @@
+.box-item {
+  display: grid;
+  gap: $gap-sm;
+
+  @mixin bp-md {
+    border: 2px solid $color-primary;
+    padding: $gap-sm;
+    box-shadow: $shadow-medium;
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+  }
+
+  &__compartment {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  &__heading {
+  color: $color-primary-dark;
+  font-weight: 600;
+  }
+
+  &__subheading {
+  color: $color-primary-dark;
+  font-weight: 500;
+  }
+}

@@ -20,6 +20,7 @@ $color-grey-medium: #4e4a4a;
 
 $bg-primary: linear-gradient(45deg, $color-primary-dark, $color-primary);
 $bg-primary-dark: linear-gradient(25deg, $color-primary-darkest, $color-primary-dark);
+$bg-primary-light: linear-gradient(25deg, $color-primary-lightest, $color-grey-light);
 $bg-secondary: linear-gradient(25deg, $color-secondary-dark, $color-secondary);
 
 /* SIZES */

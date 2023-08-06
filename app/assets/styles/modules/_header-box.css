@@ -1,0 +1,29 @@
+.header-box {
+    /* display: grid;
+    grid-template-rows: auto auto; */
+    color: $color-primary-dark;
+    background: $bg-primary-light;
+    height: 100%;
+    width: 100%;
+
+    @mixin bp-md {
+      /* grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr; */
+    }
+
+    &__content {
+      display: grid;
+      align-content: center;
+      grid-template-rows: auto auto;
+      padding: 2.5rem;
+      gap: $gap-sm;
+      
+    }
+
+    &__heading {
+      
+      @mixin bp-md {
+        font-size: 4rem;
+      }
+    }
+}

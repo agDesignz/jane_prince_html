@@ -7,15 +7,19 @@
 @import 'base/_typography';
 @import 'base/_utils';
 
+@import 'modules/_accomplishments';
 @import 'modules/_background';
+@import 'modules/_box-item';
 @import 'modules/_box-link';
 @import 'modules/_button';
 @import 'modules/_card';
 @import 'modules/_content-box';
 @import 'modules/_footer';
 @import 'modules/_grid';
+/* @import 'modules/_header-box'; */
 @import 'modules/_header-home';
 @import 'modules/_header-posts';
+@import 'modules/_page-header';
 @import 'modules/_home-about';
 @import 'modules/_home-bio';
 @import 'modules/_home-feed';
