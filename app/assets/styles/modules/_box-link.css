@@ -5,6 +5,25 @@
   margin: 0 auto;
   transition: all .24s ease-out;
 
+
+  &--bg {
+    color: $color-white;
+    border: none;
+    transition: background .24s;
+  }
+
+  &--budget {
+    background: linear-gradient(45deg, rgba($color-primary-darkest, .75), rgba($color-primary-darkest, .75)), url(./assets/images/jane-budget.jpg);
+  }
+
+  &--pigseye {
+    background: linear-gradient(45deg, rgba($color-primary-darkest, .75), rgba($color-primary-darkest, .75)), url(./assets/images/jane-pigseye.jpg);
+  }
+
+  &--whatelse {
+    background: linear-gradient(45deg, rgba($color-primary-darkest, .75), rgba($color-primary-darkest, .75)), url(./assets/images/jane-teamsters.jpg);
+  }
+  
   &:hover {
     border-color: $color-secondary-dark;
     background-color: $color-secondary-dark;
@@ -12,7 +31,8 @@
     box-shadow: $shadow-medium;
     transform: scale(1.015)
   }
-  
+
+
 
   &__anchor {
 
@@ -41,7 +61,12 @@
   }
 
   &__title {
+    font-size: 2.6rem;
     font-weight: 600;
+
+    @mixin bp-lg {
+      font-size: 3rem;
+    }
   }
 
   &__text {}
