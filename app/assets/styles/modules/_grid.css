@@ -2,16 +2,28 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 
+  &--1-col {
+    grid-template-columns: 1fr;
+  }
+
   &--gap {
     gap: $gap-sm;
   }
 
   &--gap-v {
     column-gap: $gap-sm;
+
+    @mixin bp-md {
+      column-gap: $gap-md;
+    }
   }
 
   &--gap-h {
     row-gap: $gap-sm;
+
+    @mixin bp-md {
+      row-gap: $gap-md;
+    }
   }
 
   &--full-height {
@@ -32,6 +44,18 @@
 
     &--ctr-h {
       justify-self: center;
+    }
+
+    &--xs-4 {
+      @mixin bp-xs {
+        grid-column: span 4;
+      }
+    }
+
+    &--sm-4 {
+      @mixin bp-sm {
+        grid-column: span 4;
+      }
     }
 
     &--sm-6 {

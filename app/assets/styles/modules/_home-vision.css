@@ -1,13 +1,20 @@
 .home-vision {
 
-  &__display {
+  &__image {
+    background: url(./assets/images/jane-vision-xl.jpg) no-repeat center 30%;
+    background-size: cover;
+    min-height: 45rem;
+  }
+
+
+  /* &__display {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50vw 50vw;
 
     @mixin bp-sm {
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 32vw 32vw;
+      grid-template-rows: repeat(2, 26vw)
     }
     
     @mixin bp-md {
@@ -45,5 +52,5 @@
     object-fit: cover;
     display: block;
     object-position: center top;
-  }
+  } */
 }

@@ -3,22 +3,37 @@
   
 
   @mixin bp-sm {
-    max-height: 40vw;
-    grid-template-columns: repeat(12, 1fr);
+    max-height: 30vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  @mixin bp-md {
     grid-template-rows: repeat(4, 1fr);
+    max-height: 100vw;
   }
   
   &__background {
     grid-column: 1 / -1;
-    grid-row: 1 / -2;
+    grid-row: 1 / 1;
 
     @mixin bp-sm {
+      grid-row: 1 / -1;
       background:  no-repeat top center;
       background-size: cover;
     }
 
+    @mixin bp-md {
+      grid-row: 1 / span 3;
+    }
+
     &--sky {
       background-image: linear-gradient(rgba($color-primary-dark, .7), rgba($color-primary-dark, .7)), url(./assets/images/jane-skyline.jpg);
+    }
+
+    &--mounds {
+      background-image: linear-gradient(rgba($color-primary-dark, .7), rgba($color-primary-dark, .7)), url(./assets/images/jane-skyline-2.jpg);
+      background-position: center bottom;
     }
 
     &--group {
@@ -37,31 +52,36 @@
   &__content {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
-    color: $color-primary-dark;
+    color: $color-white;
     text-align: center;
     width: 100%;
+    overflow: hidden;
 
     @mixin bp-sm {
-      grid-row: 2 / -1;
       display: grid;
-      grid-template-rows: 1fr 1fr 1fr;
       grid-template-columns: 1fr 2fr;
       color: $color-white;
-      width: $full-width;
       max-width: 114rem;
       margin-left: auto;
       margin-right: auto;
       text-align: left;
     }
 
+    @mixin bp-md {
+      grid-row: 2 / -1;
+      grid-template-rows: repeat(3, 1fr);
+      width: $full-width;
+      max-width: 114rem;
+    }
+
     & > .page-header__figure {
-      display: none;
   
       @mixin bp-sm {
-        display: block; 
-        grid-column: 1 / 2;
-        grid-row: 1 / -1;
         box-shadow: $shadow-medium;
+      }
+
+      @mixin bp-md {
+        grid-row: 1 / -1;
       }
 
     }
@@ -89,9 +109,10 @@
 
 
   &__text {
-    background: $color-grey-light;
+    background: $bg-primary;
+
     grid-column: 1 / -1;
-    grid-row: 1 / span 3;
+    grid-row: 1 / -1;
     display: grid;
     gap: 1.5rem;
     padding: 5rem 2.5rem;
@@ -99,9 +120,12 @@
     @mixin bp-sm {
       background: none;
       grid-column: 2 / -1;
-      grid-row: 1 / -2;
       align-content: end;
       padding: 2.5rem 8rem;
+    }
+
+    @mixin bp-md {
+      grid-row: 1 / span 2;
     }
   }
 
