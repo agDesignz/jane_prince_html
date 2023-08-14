@@ -21,4 +21,14 @@
     padding-top: 10rem;
     padding-bottom: 10rem;
   }
+
+  @mixin bp-lg {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
+
+  @mixin bp-xl {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
 }
