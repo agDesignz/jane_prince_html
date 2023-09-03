@@ -9,7 +9,6 @@
   &--bg {
     color: $color-white;
     border: none;
-    transition: background .24s;
   }
 
   &--budget {
